@@ -1,0 +1,1031 @@
+:root{
+    --bg-color: #d5ecf5;
+    --header-color: #8edaf8;
+    --site-name: #3b56cfd8;
+    --search-bar: #289ae659;
+    --pic-shadow: #51659c;
+    --pic-shadow-hover: #2a3f79;
+    --white-btn: #ffffff8e;
+    --white-btn-hover: #ffffffbb;
+    --btn-active: #86c1f1;
+    --download-btn: #ec932c;
+    --download-btn-hover: #f19f41;
+    --download-btn-active: #dd892a;
+    --footer-color: #80c5e0;
+
+}
+
+*{
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Serif", cursive;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+
+
+
+            /* HEADER */
+
+
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: var(--header-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 1em;
+}
+
+.head{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 0 1em;
+}
+
+
+.logo img{
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+}
+.logo span{
+    font-family: "Edu VIC WA NT Hand", cursive;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--site-name);
+    cursor: pointer;
+}
+
+
+
+.search-bar{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    gap: 1em;
+    border-radius: 25px;
+    padding-left: 1em;
+    background-color: var(--search-bar);
+    height: 40px;
+    width: 300px;
+}
+.search-bar input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+}
+.search-bar input::placeholder{
+    font-style: italic;
+    color: black;
+}
+
+
+.nav-btn, .autentification button{
+    font-size: 1rem;
+    padding: 1em;
+    background-color: transparent;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px; 
+    white-space: nowrap;
+}
+.autentification p{
+    color: white;
+    font-size: 2em;
+}
+.nav-btn:hover, 
+.autentification button:hover, 
+.more:hover{
+    background-color: var(--search-bar);
+    font-weight: bold;
+}
+.more{
+    display: none;
+    cursor: pointer;
+    margin-left: 0.3em;
+    padding: 0.7em;
+    border-radius: 10px;
+}
+
+
+            /* HEAD-PICTURE */
+
+.pagePhoto{
+    width: 100%;
+    height: 50vh;
+    background-image: url(media/front-pic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+            /* DESTINATIONS */
+
+
+.destination-packs{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+    padding: 0 1em;
+    gap: 2em;
+}
+
+.destination-packs h1{
+    text-align: center;
+}
+
+.destinations{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.vacantion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 250px;
+    box-shadow: 2px 2px 10px 3px var(--pic-shadow);
+    cursor: pointer;
+    font-size: 2em;
+}
+.culture{
+    background-image: url(media/culture.jpg);
+}
+.cruise{
+    background-image: url(media/cruise.png);
+}
+.nature{
+    background-image: url(media/nature.jpg);
+}
+.beach{
+    background-image: url(media/beach.jpg);
+}
+.cityBreak{
+    background-image: url(media/city-break.png);
+}
+.history{
+    background-image: url(media/history.png);
+}
+.family{
+    background-image: url(media/family.jpg);
+}
+.winter{
+    background-image: url(media/winter.png);
+}
+
+.vacantion:hover,
+.activity:hover,
+.city:hover,
+.best:hover{
+    box-shadow: 2px 3px 10px 3px var(--pic-shadow-hover);
+}
+
+.vacantion button, 
+.activity-btn,
+.city-btn{
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    padding: 0.4em;
+    cursor: pointer;
+    background-color: var(--white-btn);
+}
+.destinations button:hover, 
+.activity-btn:hover,
+.city-btn:hover{
+    background-color: var(--white-btn-hover);
+    box-shadow: 2px 3px 10px 3px var(--pic-shadow-hover);
+}
+
+
+.more-btns{
+    width: 80%;
+    height: fit-content;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 9em;
+}
+.btn{
+    cursor: pointer;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    padding: 0.8em 2em;
+    background-color: var(--header-color);
+    box-shadow: 2px 2px 10px 3px var(--pic-shadow-hover);
+}
+
+.btn:hover, 
+.viewallbtn:hover{
+    background-color: var(--search-bar);
+    font-weight: 500;
+}
+.btn:active,
+.viewallbtn:active{
+    background-color: var(--btn-active);
+}
+
+
+
+
+            /*  APP INFO & REVIEWS */
+
+
+
+.app-n-reviews{
+    margin-bottom: 4em;
+    width: 100%;
+    height: fit-content;
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: repeat(2, 700px);
+    grid-template-rows: 700px;
+    justify-content: center;
+    gap: 5em;
+}
+.section{
+    width: 100%;
+    height: 100%;
+    background-color: var(--header-color);
+    box-shadow: 2px 2px 10px 3px var(--pic-shadow);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+            /*  APP INFO  */
+
+.appBox{
+    height: 100%;
+    width: 90%;
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+.b{
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em 0;
+    gap: 1em;
+}
+.ai-pic{
+    width: 100%;
+    height: 500px;
+    background-image: url(media/ai-pic.png);
+    background-size: cover;
+    background-position: center;
+}
+.store{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.store img{
+    height: 100%;
+    width: auto;
+    cursor: pointer;
+}
+.app-icon{
+    background-position: center;
+    background-size: cover;
+    background-image: url(media/app-pic.png);
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+.download-btn{
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 0.8em;
+    background-color: var(--download-btn);
+    box-shadow: 2px 2px 10px 3px var(--pic-shadow);
+}
+.download-btn:hover{
+    background-color: var(--download-btn-hover);
+    font-weight: 500;
+}
+.download-btn:active{
+    background-color: var(--download-btn-active);
+}
+
+
+            /*   REVIEWS   */
+
+
+.reviews{
+    gap: 1em;
+}
+.comments{
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(3, 165px);
+    justify-content: center;
+    gap: 1em;
+    width: 95%;
+    height: 80%;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: #8ac3e9;
+    box-shadow: 1px 1px 8px #51659c;
+    border-radius: 10px;
+}
+.user{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.user-pic{
+    width: 45px;
+    height: 45px;
+    margin-left: 0.3em;
+    border: 1px solid #5f5f5f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cccccc;
+    color: #505050;
+    font-weight: 500;
+    cursor: pointer;
+}
+.small b{
+    cursor: pointer;
+}
+.user small{
+    height: auto;
+    width: 14rem;
+    margin-left: 1em;
+    font-style: italic;
+}
+.viewallbtn{
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 0.6em 3em;
+    background-color: #23bdfa;
+    box-shadow: 1px 1px 8px #51659c;
+}
+.user small{
+    padding-right: 0.5em;
+}
+
+
+
+                        /*  FEEL THE ADRENALINE   */
+                                 /*  &   */
+                        /*  CLASSIC VACANTION   */
+
+.adrenaline,
+.classic{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 6em 0;
+    gap: 2em;
+}
+.activities-box,
+.cityes-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: 2em;
+}
+.activities-box button,
+.cityes-box button{
+    display: none;
+}
+.activities,
+.cityes{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: 220px;
+    gap: 3em;
+}
+.activity,
+.city{
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px 3px var(--pic-shadow);
+    cursor: pointer;
+}
+.carting{
+    background-image: url(media/carting.jpg);
+}
+.kayaking{
+    background-image: url(media/canoe.jpg);
+}
+.paragliding{
+    background-image: url(media/paragliding.jpg);
+}
+.diving{
+    background-image: url(media/diving.jpg);
+}
+.paris{
+    background-image: url(media/classic-paris.jpg);
+}
+.la{
+    background-image: url(media/classic-la.png);
+}
+.tokyo{
+    background-image: url(media/classic-tokyo.png);
+}
+.london{
+    background-image: url(media/classic-london.jpg);
+}
+.activities-box i,
+.cityes-box i,
+.gallery i{
+    background-color: var(--header-color);
+    border-radius: 50%;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.activities-box i:hover,
+.cityes-box i:hover,
+.gallery i:hover{
+    background-color: var(--search-bar);
+    box-shadow: 1px 1px 8px var(--pic-shadow-hover);
+}
+.activities-box i:active,
+.cityes-box i:active,
+.gallery i:active{
+    background-color: var(--btn-active);
+}
+
+
+
+                        /*   BEST DESTINATION   */
+
+
+
+.best-destination{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 2em 0;
+    width: fit-content;
+    height: fit-content;
+}
+.country-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: 550px;
+    gap: 3em;
+}
+.best{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--header-color);
+    border-radius: 15px;
+    gap: 1em;
+    padding: 1em;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px 3px var(--pic-shadow);
+}
+.bestpic{
+    width: 80%;
+    height: 60%;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 1px 1px 8px var(--pic-shadow);
+    border-radius: 10px;
+}
+.country-flag{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 1px 1px 8px var(--pic-shadow);
+}
+.osaka-pic{
+    background-image: url(media/best-osaka.jpg);
+}
+.santorini-pic{
+    background-image: url(media/best-santorini.jpg);
+}
+.barcelona-pic{
+    background-image: url(media/best-barcelona.jpg);
+}
+.japan{
+    background-image: url(media/japan-flag.png);
+}
+.greece{
+    background-image: url(media/greece-flag.png);
+}
+.spain{
+    background-image: url(media/spain-flag.png);
+}
+.gallery button{
+    display: none;
+}
+
+
+
+
+                        /*   FOOTER   */
+
+
+footer{
+    background-color: var(--footer-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    gap: 3em;
+    padding: 2em 0 1em;
+    text-align: center;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.list a{
+    text-decoration: none;
+    color: black;
+}
+.list a:hover{
+    text-decoration: underline;
+}
+.getapp{
+    width: 130px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.apple-store{
+    background-image: url(media/apple-store.png);    
+}
+.google-play{
+    background-image: url(media/google-play.png);
+}
+.socials{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.icon{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+.tiktok{
+    background-image: url(media/tiktok.png);
+}
+.facebook{
+    background-image: url(media/facebook.png);
+}
+.x{
+    background-image: url(media/X.png);
+}
+.instagram{
+    background-image: url(media/instagram.png);
+}
+.youtube{
+    background-image: url(media/youtube.png);
+}
+
+
+
+                        /*   PAGE-SIZING   */
+
+
+
+
+@media (max-width: 1500px){
+    .app-n-reviews{
+        grid-template-columns: repeat(2, 550px);
+        grid-template-rows: 700px;
+    }
+    .comments{
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows: repeat(3, 165px);
+    }
+    .user-pic{
+        display: none;
+    }
+    .stars{
+        font-size: 0.8em;
+    }
+    .app-icon{
+        width: 150px;
+        height: 150px;
+    }
+    .store{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2em;
+    }
+    .store img{
+        height: 40px;
+        width: auto;
+        cursor: pointer;
+    }
+}
+@media (max-width: 1440px){
+    .activities,
+    .cityes{
+        grid-template-columns: repeat(4, 250px);
+        grid-template-rows: 200px;
+        gap: 2em;
+    }
+    .country-grid{
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: 500px;
+    }
+    .best p{
+        font-size: 0.9em;
+    }
+    .bestpic{
+        width: 90%;
+        height: 50%;
+    }
+    .country-flag{
+        width: 50px;
+        height: 50px;
+    }
+    .gallery i{
+        display: none;
+    }
+    .gallery button{
+        display: block;
+    }
+    .gallery{
+        flex-direction: column;
+    }
+}
+@media (max-width: 1190px){
+    .app-n-reviews{
+        grid-template-columns: repeat(2, 500px);
+        grid-template-rows: 500px;
+        gap: 2em;
+    }
+    .hide{
+        display: none;
+    }
+    .box2{
+        width: 100%;
+    }
+    .comments{
+        grid-template-rows: repeat(2, 165px);
+    }
+    .activities,
+    .cityes{
+        grid-template-columns: repeat(4, 200px);
+        grid-template-rows: 150px;
+        gap: 2em;
+    }
+    .activity-btn,
+    .city-btn{
+        font-size: 1.2rem;
+    }
+    .adrenaline h1,
+    .classic h1{
+        font-size: 1.7rem;
+    }
+    .activities-box i,
+    .cityes-box i{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width: 1155px){
+    .search-bar{
+        display: none;
+    }
+    .more{
+        display: flex;
+    }
+    header{
+        padding: 0;
+    }
+}
+@media (max-width: 1024px){
+    .more-btns{
+        padding: 0;
+    }
+    .app-n-reviews{
+        grid-template-columns: 600px;
+        grid-template-rows: repeat(2, 700px);
+        gap: 4em;
+    }
+    .app-icon{
+        width: 200px;
+        height: 200px;
+    }
+    .box2 h3{
+        font-size: 1.4rem;
+    }
+    .box2 p{
+        font-size: 1.1rem;
+    }
+    .box{
+        display: block;
+    }
+    .activities,
+    .cityes{
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: 150px;
+        gap: 2em;
+    }
+    .hide-slide{
+        display: none;
+    }
+    .country-grid{
+        grid-template-columns: 500px;
+        grid-template-rows: repeat(3, 200px);
+        gap: 2em;
+    }
+    .best{
+        flex-direction: row;
+    }
+    .best h4,
+    .country-flag{
+        display: none;
+    }
+    .bestpic{
+        width: 50%;
+        height: 90%;
+    }
+    .best p{
+        width: 40%;
+    }
+}
+@media (max-width: 880px){
+    .nav{
+        display: none;
+    }
+    header{
+        justify-content: space-between;
+    }
+    .destinations{
+        display: grid;
+        width: 100%;
+        max-width: 650px;
+        gap: 2.5em;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .vacantion{
+        width: 100%;
+    }
+    .btn{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 768px){
+    .activities,
+    .cityes{
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(2, 150px);
+        gap: 2em;
+    }
+    .hide-slide{
+        display: flex;
+    }
+    .activities-box button,
+    .cityes-box button{
+        display: flex;
+    }
+    .activities-box i,
+    .cityes-box i{
+        display: none;
+    }
+    .activities-box,
+    .cityes-box{
+        flex-direction: column;
+    }
+    .links{
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 150px);
+        gap: 1.5em;
+    }
+}
+@media (max-width: 600px){
+    .app-n-reviews{
+        grid-template-columns: 420px;
+        grid-template-rows: repeat(2, 550px);
+        gap: 4em;
+    }
+    .hide{
+        display: none;
+    }
+    .comments{
+
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows: repeat(3, 200px);
+
+    }
+}
+@media (max-width: 555px){
+    .log{
+        display: none;
+    }
+    .destinations{
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 200px);
+        gap: 2em;
+    }
+    .vacantion{
+        height: 100%;
+    }
+    .more-btns{
+        flex-wrap: wrap;
+        gap: 2em;
+
+    }
+    .vacantion button{
+        font-size: 1.2rem;
+    }
+    .country-grid{
+        grid-template-columns: 300px;
+        grid-template-rows: repeat(3, 300px);
+        gap: 2em;
+    }
+    .best p{
+        display: none;
+    }
+    .best h4{
+        display: block;
+    }
+    .best{
+        flex-direction: column;
+    }
+    .bestpic{
+        width: 90%;
+    }
+    .best-destination h1{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}
+@media (max-width: 425px){
+    .logo img{
+        width: 40px;
+    }
+    .logo span{
+        font-size: 1rem;
+    }
+    .destinations{
+        grid-template-rows: repeat(4, 180px);
+    }
+    .app-n-reviews{
+        grid-template-columns: 300px;
+        grid-template-rows: repeat(2, 550px);
+    }
+    .app-icon{
+        width: 150px;
+        height: 150px;
+    }
+    .box2 h3{
+        font-size: 1.2rem;
+    }
+    .box2 p{
+        font-size: 1rem;
+    }
+    .download-btn{
+        font-size: 1.1rem;
+        padding: 0.8em;
+    }
+    .section{
+        text-align: center;
+    }
+    .hide2{
+        display: none;
+    }
+    .comments{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 130px);
+    }
+    .reviews button{
+        font-size: 1rem;
+        margin-top: 0.5em;
+    }
+    .activities,
+    .cityes{
+        grid-template-columns: repeat(2, 120px);
+        grid-template-rows: repeat(2, 100px);
+    }
+    .activities-box button,
+    .cityes-box button{
+        font-size: 1rem;
+    }
+    .country-grid{
+        grid-template-columns: 280px;
+        grid-template-rows: repeat(3, 280px);
+        gap: 2em;
+    }
+    .links{
+        display: grid;
+        grid-template-columns: repeat(2, 130px);
+        grid-template-rows: repeat(2, 170px);
+    }
+    .icon{
+        width: 40px;
+        height: 40px;
+    }
+    .getapp{
+        width: 120px;
+        height: 35px;
+    }
+}
