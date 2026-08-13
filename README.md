@@ -2,13 +2,20 @@
 
 A travel agency site presenting holiday categories, destinations and customer reviews, built with HTML and CSS.
 
-**Live site:** _[adaugă link Netlify sau GitHub Pages]_
+**Live site:** 
+https://biancasud.github.io/Project-3-Tourism-Agency-Site/   /
+https://traveling-and-you.netlify.app/
 
-![Traveling&YOU](screenshot.png)
+![Traveling&YOU]
+<img width="397" height="815" alt="image" src="https://github.com/user-attachments/assets/9f9f8254-5049-4db2-ab09-69637095b61a" />
+<img width="1271" height="829" alt="image" src="https://github.com/user-attachments/assets/b95db345-97d5-4d7f-ada0-3227ed25ba82" />
+
+
+
 
 ## About
 
-Traveling&YOU helps a visitor choose a holiday by the kind of trip they want rather than by destination — the entry point is "what type of traveller are you", not "where do you want to go".
+Traveling&YOU helps a visitor choose a holiday by the kind of trip they want rather than by destination — the entry point is "what type of traveler are you", not "where do you want to go".
 
 ## Features
 
@@ -39,7 +46,6 @@ The reviews section. Each card holds a rating, an avatar, a name, a location and
 
 ## Possible improvements
 
-- Fix the typos in the copy (`arrve`, `whiteweashed`, `Galery`, `vacantion`)
 - Individual destination pages
 - Booking form
 - Responsive layout
